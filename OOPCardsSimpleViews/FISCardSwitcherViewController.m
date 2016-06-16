@@ -26,32 +26,39 @@
                                                 rank:@"10"];
 }
 
+-(void)changeLabels:(FISCard *)card {
+//    for(id label in self.view.subviews){
+//        if([label isKindOfClass:[UILabel class]]){
+//            label.text
+//        }
+//    }
+    self.topLabel.text = card.cardLabel;
+    self.middleLabel.text = card.cardLabel;
+    self.bottomLabel.text = card.cardLabel;
+}
 
 - (IBAction)threeOfSpadesClick:(id)sender {
-    self.topLabel.text = @"♠️3";
-    self.middleLabel.text = @"♠️3";
-    self.bottomLabel.text = @"♠️3";
+    
+    [self changeLabels:self.threeOfSpades];
+    
 }
 
 
 - (IBAction)fourOfClubsClick:(id)sender {
-    self.topLabel.text = @"♣️4";
-    self.middleLabel.text = @"♣️4";
-    self.bottomLabel.text = @"♣️4";
+    
+    [self changeLabels:self.fourOfClubs];
 }
 
 
 - (IBAction)eightOfDiamondsClick:(id)sender {
-    self.topLabel.text = @"♦️8";
-    self.middleLabel.text = @"♦️8";
-    self.bottomLabel.text = @"♦️8";
+    
+    [self changeLabels:self.eightOfDiamonds];
 }
 
 
 - (IBAction)tenOfHeartsClick:(id)sender {
-    self.topLabel.text = @"♥️10";
-    self.middleLabel.text = @"♥️10";
-    self.bottomLabel.text = @"♥️10";
+    
+    [self changeLabels:self.tenOfHearts]; 
 }
 
 
