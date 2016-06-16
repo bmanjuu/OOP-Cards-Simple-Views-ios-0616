@@ -10,5 +10,11 @@
 @property (strong, nonatomic) FISCard *eightOfDiamonds;
 @property (strong, nonatomic) FISCard *tenOfHearts;
 
+
+- (IBAction)threeOfSpadesClick:(id)sender;
+- (IBAction)fourOfClubsClick:(id)sender;
+- (IBAction)eightOfDiamondsClick:(id)sender;
+- (IBAction)tenOfHeartsClick:(id)sender;
+
 @end
 
